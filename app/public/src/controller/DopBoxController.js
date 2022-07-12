@@ -20,6 +20,23 @@ class DropBoxController{
 
     }
 
+    connectFirebase(){
+        const firebaseConfig = {
+            apiKey: "AIzaSyC1ZKy9lAK35bufXt_cy5FogTVAwA4joSA",
+            authDomain: "dogbox-68210821.firebaseapp.com",
+            databaseURL: "https://dogbox-68210821-default-rtdb.firebaseio.com",
+            projectId: "dogbox-68210821",
+            storageBucket: "dogbox-68210821.appspot.com",
+            messagingSenderId: "646404655763",
+            appId: "1:646404655763:web:98ead1cc2c0bfb620d1b66",
+            measurementId: "G-4B45V8ECET"
+          };
+        
+          // Initialize Firebase
+          const app = initializeApp(firebaseConfig);
+          const analytics = getAnalytics(app);
+    }
+
     // Método Inicializador dos Eventos
     initEvents(){
         
