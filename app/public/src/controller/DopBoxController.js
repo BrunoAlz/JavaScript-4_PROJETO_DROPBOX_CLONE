@@ -79,6 +79,7 @@ class DropBoxController{
                 // pegamos os arquivos que estão passando pelo forEach com a variavel file
                 formData.append('input-file', file);
 
+                // Enviando a requisição
                 ajax.send(formData);
 
             }));
